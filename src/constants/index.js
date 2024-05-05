@@ -152,7 +152,7 @@ const experiences = [
       "Developed responsive website application using HTML, CSS, and JavaScript",
       "Created Drag and Drop 'Analytics Project Plan Lifecycle Game' using Construct 3",
       "Created fully animated website using React.js and GreenSock (GSAP)",
-      "Do research about Web 3.0, Moralis, and Blockchain",
+      "Conducted research on emerging technologies such as Web 3.0, Blockchain, and Moralis to explore their potential applications and benefits.",
     ],
   },
   {
