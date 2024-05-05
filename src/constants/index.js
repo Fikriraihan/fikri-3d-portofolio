@@ -1,4 +1,32 @@
-import { mobile, backend, creator, web, javascript, typescript, html, css, reactjs, redux, tailwind, zustand, reactquery, git, nextjs, sanity, fxmedia, rds, harisenin, shopee, gojek, traveloka, threejs } from "../assets";
+import {
+  mobile,
+  backend,
+  creator,
+  web,
+  javascript,
+  typescript,
+  html,
+  css,
+  reactjs,
+  redux,
+  tailwind,
+  zustand,
+  reactquery,
+  git,
+  nextjs,
+  fxmedia,
+  rds,
+  harisenin,
+  shopee,
+  gojek,
+  traveloka,
+  threejs,
+  express,
+  docker,
+  mongo,
+  prisma,
+  nodejs,
+} from "../assets";
 
 export const navLinks = [
   {
@@ -35,14 +63,14 @@ const services = [
 ];
 
 const technologies = [
-  {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
-  },
+  // {
+  //   name: "HTML 5",
+  //   icon: html,
+  // },
+  // {
+  //   name: "CSS 3",
+  //   icon: css,
+  // },
   {
     name: "JavaScript",
     icon: javascript,
@@ -68,8 +96,8 @@ const technologies = [
     icon: zustand,
   },
   {
-    name: "Sanity",
-    icon: sanity,
+    name: "Prisma",
+    icon: prisma,
   },
   {
     name: "Three JS",
@@ -87,6 +115,22 @@ const technologies = [
     name: "React Query",
     icon: reactquery,
   },
+  {
+    name: "Docker",
+    icon: docker,
+  },
+  // {
+  //   name: "Mongo",
+  //   icon: mongo,
+  // },
+  {
+    name: "Node.js",
+    icon: nodejs,
+  },
+  // {
+  //   name: "Express",
+  //   icon: express,
+  // },
 ];
 
 const experiences = [
@@ -117,7 +161,11 @@ const experiences = [
     icon: harisenin,
     iconBg: "#383E56",
     date: "September 2022 - Jan 2023",
-    points: ["Collaborated with the to create a responsive website.", "Converted the visual design that provided by the design team on Figma into code using Next.js and Tailwind"],
+    points: [
+      "Utilized Next.js for building the user interface of the Harisenin-Consulting and Harisenin-Creative projects, ensuring efficient development and optimal performance.",
+      "Implemented Tailwind CSS to streamline the styling process, leveraging its utility-first approach to ensure consistent and visually appealing designs.",
+      "Actively participated in team meetings and discussions, contributing ideas and insights to drive innovation and improve project outcomes.",
+    ],
   },
   {
     title: "Front-End Developer",
@@ -126,10 +174,11 @@ const experiences = [
     iconBg: "#E6DEDD",
     date: "Feb 2023 - Present",
     points: [
-      "Developing and maintaining web applications using Next.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developed the front-end architecture and user interface using Next.js and TypeScript, leveraging its capabilities for improved performance and facilitating code reliability, maintainability, and developer productivity through static typing.",
+      "Integrated React Query for efficient data fetching, caching, and synchronization with the server, ensuring a seamless user experience.",
+      "Managed global state and application data using Zustand, simplifying state management and enhancing scalability and maintainability.",
+      "Worked closely with design and back-end teams to develop features, troubleshoot issues, and ensure timely delivery of high- quality solutions.",
+      "Conducted thorough testing and debugging to ensure cross-browser compatibility, accessibility, and responsiveness across various devices and screen sizes.",
     ],
   },
 ];

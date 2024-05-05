@@ -20,6 +20,11 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import express from "./tech/express.png";
+import docker from "./tech/docker.jpg";
+import mongo from "./tech/mongo.jpeg";
+import nodejs from "./tech/nodejs.png";
+import prisma from "./tech/prisma.png";
 
 import fxmedia from "./company/fxmedia.png";
 import harisenin from "./company/harisenin.png";
@@ -29,4 +34,37 @@ import shopee from "./shopee.png";
 import gojek from "./gojek.png";
 import traveloka from "./traveloka.png";
 
-export { logo, backend, creator, mobile, web, github, menu, close, css, sanity, nextjs, git, html, javascript, reactquery, zustand, reactjs, redux, tailwind, typescript, threejs, fxmedia, rds, harisenin, shopee, gojek, traveloka };
+export {
+  logo,
+  backend,
+  creator,
+  mobile,
+  web,
+  github,
+  menu,
+  close,
+  css,
+  sanity,
+  nextjs,
+  git,
+  html,
+  javascript,
+  reactquery,
+  zustand,
+  reactjs,
+  redux,
+  tailwind,
+  typescript,
+  threejs,
+  fxmedia,
+  rds,
+  harisenin,
+  shopee,
+  gojek,
+  traveloka,
+  docker,
+  express,
+  mongo,
+  nodejs,
+  prisma,
+};
