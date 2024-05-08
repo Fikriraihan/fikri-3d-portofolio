@@ -33,15 +33,22 @@ import rds from "./company/rds.png";
 import shopee from "./shopee.png";
 import gojek from "./gojek.png";
 import traveloka from "./traveloka.png";
+import cirrustwf from "./cirrustwf.png";
+import mkm from "./mkm.png";
+import cirrustdms from "./cirrustdms.png";
+import imaginify from "./imaginify.png";
+import codewars from "./codewars.png";
 
 export {
   logo,
   backend,
   creator,
   mobile,
+  codewars,
   web,
   github,
   menu,
+  imaginify,
   close,
   css,
   sanity,
@@ -66,5 +73,8 @@ export {
   express,
   mongo,
   nodejs,
+  mkm,
+  cirrustdms,
+  cirrustwf,
   prisma,
 };

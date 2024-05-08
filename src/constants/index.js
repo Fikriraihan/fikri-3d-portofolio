@@ -26,6 +26,11 @@ import {
   mongo,
   prisma,
   nodejs,
+  cirrustwf,
+  cirrustdms,
+  mkm,
+  imaginify,
+  codewars,
 } from "../assets";
 
 export const navLinks = [
@@ -209,44 +214,101 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Shopee",
-    description: "Web-based platform that allows users to search, buy, and sell products from various providers, providing a convenient and efficient solution for user needs.",
+    name: "Cirrust Workflow",
+    description: "Easy-to-use solution that allows users to route and manage document flow.",
     tags: [
       {
-        name: "react",
+        name: "next",
         color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
       },
       {
         name: "tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: shopee,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Gojek",
-    description: "Gojek is an Indonesian multi-service platform that offers a wide range of services such as ride-hailing, food delivery, shopping, and payment solutions. ",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "antd",
         color: "pink-text-gradient",
       },
     ],
-    image: gojek,
-    source_code_link: "https://github.com/",
+    image: cirrustwf,
+  },
+  {
+    name: "Cirrust DMS",
+    description: "Web-based platform that allows users to search, buy, and sell products from various providers, providing a convenient and efficient solution for user needs.",
+    tags: [
+      {
+        name: "next",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "green-text-gradient",
+      },
+      {
+        name: "antd",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: cirrustdms,
+  },
+  {
+    name: "MKM",
+    description: "Web-based platform that allows users to search, buy, and sell products from various providers, providing a convenient and efficient solution for user needs.",
+    tags: [
+      {
+        name: "next",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "green-text-gradient",
+      },
+      {
+        name: "antd",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: mkm,
+  },
+  {
+    name: "Imaginify",
+    description: "SaaS application that offers image editing tools like image restoration, object removal, and color changes to allow users to creatively edit their images.",
+    tags: [
+      {
+        name: "next",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "cloudinary",
+        color: "green-text-gradient",
+      },
+      {
+        name: "clerk",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: imaginify,
+    source_code_link: "https://github.com/Fikriraihan/imaginify",
+  },
+  {
+    name: "Coding Challenge 2024",
+    description: "Its basically not a project, but its a coding challenge, where most of it is for codewars which is a platform for programmers to hone their skills through coding challenges.",
+    tags: [
+      {
+        name: "javascript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "problem solving",
+        color: "green-text-gradient",
+      },
+      {
+        name: "dsa",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: codewars,
+    source_code_link: "https://github.com/Fikriraihan/2024-coding-challenge",
   },
   {
     name: "Traveloka",
