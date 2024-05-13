@@ -38,6 +38,7 @@ import mkm from "./mkm.png";
 import cirrustdms from "./cirrustdms.png";
 import imaginify from "./imaginify.png";
 import codewars from "./codewars.png";
+import aora from "./aora-1.png";
 
 export {
   logo,
@@ -58,6 +59,7 @@ export {
   javascript,
   reactquery,
   zustand,
+  aora,
   reactjs,
   redux,
   tailwind,

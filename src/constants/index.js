@@ -31,6 +31,7 @@ import {
   mkm,
   imaginify,
   codewars,
+  aora,
 } from "../assets";
 
 export const navLinks = [
@@ -190,32 +191,32 @@ const experiences = [
 
 const testimonials = [
   {
-    testimonial: "Fikri sangat bekerja dengan cepat, tekun, dan pintar dalam menyelesaikan masalah. Fikri juga sangat peduli dengan klien. Mantul Fikri!",
-    name: "Rahmadea Sagita Putri",
-    designation: "CEO",
-    company: "Tencent",
-    image: "https://randomuser.me/api/portraits/women/2.jpg",
+    testimonial: "Saya sangat menghargai dedikasi Fikri dalam mengembangkan fitur-fitur penting dalam proyek. Dia selalu siap membantu dan memberikan kontribusi berarti dalam mencapai tujuan tim.",
+    name: "Aryo Anindyo Abhinowo",
+    designation: "Mobile Developer",
+    company: "PT Reycom Document Solusi",
+    image: "https://media.licdn.com/dms/image/D5603AQHNUGx6KcWpQg/profile-displayphoto-shrink_400_400/0/1713184513798?e=1721260800&v=beta&t=Gght1dUBoij5aiXGqxrO-QeYz15OMfqGgxlpL_Bn8Rw",
   },
   {
-    testimonial: "Fikri pokoknya rajin banget dah. Klien pun sangat senang dengan Fikri. Kelas Pik",
+    testimonial: "Dengan kontribusi Fikri, proyek pengembangan web kami menjadi lebih maju! Dia adalah rekan kerja yang dapat diandalkan dalam tim pengembangan web.",
     name: "Dendy Juliano Juanda",
-    designation: "COO",
-    company: "Moonton",
-    image: "https://randomuser.me/api/portraits/men/1.jpg",
+    designation: "Front-End Developer",
+    company: "PT Reycom Document",
+    image: "https://media.licdn.com/dms/image/D5603AQF0SjpNGZInyw/profile-displayphoto-shrink_400_400/0/1711424295420?e=1721260800&v=beta&t=E-FIkANxyWYi8BgJqLAnY_FmmU7oVt-KUbBVKobHwzQ",
   },
   {
-    testimonial: "Bekerja dengan Fikri sangatlah menyenangkan. Dia adalah orang yang sangat asik tetapi tetap tekun dengan pekerjaannya. Mantep Pik.",
-    name: "Alvin Johannes",
-    designation: "CTO",
-    company: "Tokopedia",
-    image: "https://randomuser.me/api/portraits/men/7.jpg",
+    testimonial: "Bekerja dengan Fikri sangatlah menyenangkan. Dia adalah orang yang sangat asik tetapi tetap tekun dengan pekerjaannya.",
+    name: "Fadli Amin",
+    designation: "Quality Assurance Analyst",
+    company: "PT Reycom Document Solusi",
+    image: "https://media.licdn.com/dms/image/D5603AQEJ8ZGscpUq6w/profile-displayphoto-shrink_400_400/0/1666472720399?e=1721260800&v=beta&t=oZNRiP1ZU_uvr_088NJWS8Vs6XcmECgc8vlzoxf9rcA",
   },
 ];
 
 const projects = [
   {
     name: "Cirrust Workflow",
-    description: "Easy-to-use solution that allows users to route and manage document flow.",
+    description: "This platform empowers businesses to streamline and define their workflow processes with ease. From assigning tasks to tracking progress and many more features.",
     tags: [
       {
         name: "next",
@@ -234,7 +235,7 @@ const projects = [
   },
   {
     name: "Cirrust DMS",
-    description: "Web-based platform that allows users to search, buy, and sell products from various providers, providing a convenient and efficient solution for user needs.",
+    description: "This platform offers seamless document management with advanced features such as document correlation, easy search functionality, annotation capabilities, etc",
     tags: [
       {
         name: "next",
@@ -253,7 +254,7 @@ const projects = [
   },
   {
     name: "MKM",
-    description: "Web-based platform that allows users to search, buy, and sell products from various providers, providing a convenient and efficient solution for user needs.",
+    description: "",
     tags: [
       {
         name: "next",
@@ -291,6 +292,26 @@ const projects = [
     source_code_link: "https://github.com/Fikriraihan/imaginify",
   },
   {
+    name: "Aora",
+    description: "Introducing our React Native video app! Explore user collections, create your own, and enjoy seamless video browsing. Simply tap to watch.",
+    tags: [
+      {
+        name: "react-native",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "appwrite",
+        color: "green-text-gradient",
+      },
+      {
+        name: "expo",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: aora,
+    source_code_link: "https://github.com/Fikriraihan/expo-mobile",
+  },
+  {
     name: "Coding Challenge 2024",
     description: "Its basically not a project, but its a coding challenge, where most of it is for codewars which is a platform for programmers to hone their skills through coding challenges.",
     tags: [
@@ -309,26 +330,6 @@ const projects = [
     ],
     image: codewars,
     source_code_link: "https://github.com/Fikriraihan/2024-coding-challenge",
-  },
-  {
-    name: "Traveloka",
-    description: "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: traveloka,
-    source_code_link: "https://github.com/",
   },
 ];
 
