@@ -31,6 +31,7 @@ import {
   mkm,
   imaginify,
   codewars,
+  soulceramics,
   aora,
 } from "../assets";
 
@@ -146,7 +147,10 @@ const experiences = [
     icon: harisenin,
     iconBg: "#383E56",
     date: "March 2022 - July 2022",
-    points: ["Immersive training program with an emphasis on Full-Stack Web Development", "Created E-Commerce Website for final project in the end of the bootcamp"],
+    points: [
+      "Immersive training program with an emphasis on Full-Stack Web Development",
+      "Created E-Commerce Website for final project in the end of the bootcamp",
+    ],
   },
   {
     title: "Front-End Developer",
@@ -191,32 +195,39 @@ const experiences = [
 
 const testimonials = [
   {
-    testimonial: "Saya sangat menghargai dedikasi Fikri dalam mengembangkan fitur-fitur penting dalam proyek. Dia selalu siap membantu dan memberikan kontribusi berarti dalam mencapai tujuan tim.",
+    testimonial:
+      "Saya sangat menghargai dedikasi Fikri dalam mengembangkan fitur-fitur penting dalam proyek. Dia selalu siap membantu dan memberikan kontribusi berarti dalam mencapai tujuan tim.",
     name: "Aryo Anindyo Abhinowo",
     designation: "Mobile Developer",
     company: "PT Reycom Document Solusi",
-    image: "https://media.licdn.com/dms/image/D5603AQHNUGx6KcWpQg/profile-displayphoto-shrink_400_400/0/1713184513798?e=1721260800&v=beta&t=Gght1dUBoij5aiXGqxrO-QeYz15OMfqGgxlpL_Bn8Rw",
+    image:
+      "https://media.licdn.com/dms/image/D5603AQHNUGx6KcWpQg/profile-displayphoto-shrink_400_400/0/1713184513798?e=1721260800&v=beta&t=Gght1dUBoij5aiXGqxrO-QeYz15OMfqGgxlpL_Bn8Rw",
   },
   {
-    testimonial: "Dengan kontribusi Fikri, proyek pengembangan web kami menjadi lebih maju! Dia adalah rekan kerja yang dapat diandalkan dalam tim pengembangan web.",
+    testimonial:
+      "Dengan kontribusi Fikri, proyek pengembangan web kami menjadi lebih maju! Dia adalah rekan kerja yang dapat diandalkan dalam tim pengembangan web.",
     name: "Dendy Juliano Juanda",
     designation: "Front-End Developer",
     company: "PT Reycom Document",
-    image: "https://media.licdn.com/dms/image/D5603AQF0SjpNGZInyw/profile-displayphoto-shrink_400_400/0/1711424295420?e=1721260800&v=beta&t=E-FIkANxyWYi8BgJqLAnY_FmmU7oVt-KUbBVKobHwzQ",
+    image:
+      "https://media.licdn.com/dms/image/D5603AQF0SjpNGZInyw/profile-displayphoto-shrink_400_400/0/1711424295420?e=1721260800&v=beta&t=E-FIkANxyWYi8BgJqLAnY_FmmU7oVt-KUbBVKobHwzQ",
   },
   {
-    testimonial: "Bekerja dengan Fikri sangatlah menyenangkan. Dia adalah orang yang sangat asik tetapi tetap tekun dengan pekerjaannya.",
+    testimonial:
+      "Bekerja dengan Fikri sangatlah menyenangkan. Dia adalah orang yang sangat asik tetapi tetap tekun dengan pekerjaannya.",
     name: "Fadli Amin",
     designation: "Quality Assurance Analyst",
     company: "PT Reycom Document Solusi",
-    image: "https://media.licdn.com/dms/image/D5603AQEJ8ZGscpUq6w/profile-displayphoto-shrink_400_400/0/1666472720399?e=1721260800&v=beta&t=oZNRiP1ZU_uvr_088NJWS8Vs6XcmECgc8vlzoxf9rcA",
+    image:
+      "https://media.licdn.com/dms/image/D5603AQEJ8ZGscpUq6w/profile-displayphoto-shrink_400_400/0/1666472720399?e=1721260800&v=beta&t=oZNRiP1ZU_uvr_088NJWS8Vs6XcmECgc8vlzoxf9rcA",
   },
 ];
 
 const projects = [
   {
     name: "Cirrust Workflow",
-    description: "This platform empowers businesses to streamline and define their workflow processes with ease. From assigning tasks to tracking progress and many more features.",
+    description:
+      "This platform empowers businesses to streamline and define their workflow processes with ease. From assigning tasks to tracking progress and many more features.",
     tags: [
       {
         name: "next",
@@ -235,7 +246,8 @@ const projects = [
   },
   {
     name: "Cirrust DMS",
-    description: "This platform offers seamless document management with advanced features such as document correlation, easy search functionality, annotation capabilities, etc",
+    description:
+      "This platform offers seamless document management with advanced features such as document correlation, easy search functionality, annotation capabilities, etc",
     tags: [
       {
         name: "next",
@@ -273,7 +285,8 @@ const projects = [
   },
   {
     name: "Imaginify",
-    description: "SaaS application that offers image editing tools like image restoration, object removal, and color changes to allow users to creatively edit their images.",
+    description:
+      "SaaS application that offers image editing tools like image restoration, object removal, and color changes to allow users to creatively edit their images.",
     tags: [
       {
         name: "next",
@@ -293,7 +306,8 @@ const projects = [
   },
   {
     name: "Aora",
-    description: "Introducing our React Native video app! Explore user collections, create your own, and enjoy seamless video browsing. Simply tap to watch.",
+    description:
+      "Introducing our React Native video app! Explore user collections, create your own, and enjoy seamless video browsing. Simply tap to watch.",
     tags: [
       {
         name: "react-native",
@@ -312,24 +326,25 @@ const projects = [
     source_code_link: "https://github.com/Fikriraihan/expo-mobile",
   },
   {
-    name: "Coding Challenge 2024",
-    description: "Its basically not a project, but its a coding challenge, where most of it is for codewars which is a platform for programmers to hone their skills through coding challenges.",
+    name: "Soul Ceramics",
+    description:
+      "A web application replicating the Soul Ceramics store, allowing users to browse products, select sizes, and add items to their cart.",
     tags: [
       {
-        name: "javascript",
+        name: "typescript",
         color: "blue-text-gradient",
       },
       {
-        name: "problem solving",
+        name: "next",
         color: "green-text-gradient",
       },
       {
-        name: "dsa",
+        name: "express.js",
         color: "pink-text-gradient",
       },
     ],
-    image: codewars,
-    source_code_link: "https://github.com/Fikriraihan/2024-coding-challenge",
+    image: soulceramics,
+    source_code_link: "https://github.com/Fikriraihan/soul-ceramics",
   },
 ];
 

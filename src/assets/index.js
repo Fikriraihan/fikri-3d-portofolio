@@ -38,11 +38,13 @@ import mkm from "./mkm.png";
 import cirrustdms from "./cirrustdms.png";
 import imaginify from "./imaginify.png";
 import codewars from "./codewars.png";
+import soulceramics from "./soulceramics.png";
 import aora from "./aora-1.png";
 
 export {
   logo,
   backend,
+  soulceramics,
   creator,
   mobile,
   codewars,
