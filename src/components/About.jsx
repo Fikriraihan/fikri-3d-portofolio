@@ -9,7 +9,10 @@ import { SectionWrapper } from "../hoc";
 const ServiceCard = ({ index, title, icon }) => {
   return (
     <Tilt className="xs:w-[250px] w-full">
-      <motion.div variants={fadeIn("right", "spring", 0.5 * index, 0.75)} className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card">
+      <motion.div
+        variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
+        className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
+      >
         <div
           options={{
             max: 45,
@@ -19,7 +22,9 @@ const ServiceCard = ({ index, title, icon }) => {
           className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
         >
           <img src={icon} alt={title} className="w-16 h-16 object-contain" />
-          <h3 className="text-white text-[20px] font-bold text-center">{title}</h3>
+          <h3 className="text-white text-[20px] font-bold text-center">
+            {title}
+          </h3>
         </div>
       </motion.div>
     </Tilt>
@@ -34,9 +39,15 @@ const About = () => {
         <h2 className={styles.sectionHeadText}>Overview.</h2>
       </motion.div>
 
-      <motion.p variants={fadeIn("", "", 0.1, 1)} className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]">
-        Born on 3rd of April 1999 in Bogor. Currently a Front-End Developer at PT. Reycom Document Solusi who loves everything about technology, also both sports and e-sports. I have a strong will to study, especially learn about a new
-        things. I would like to work in a team but also can work on my own. I am an extrovert person and tend to adapt quickly in new environment
+      <motion.p
+        variants={fadeIn("", "", 0.1, 1)}
+        className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
+      >
+        Born on 3rd of April 1999 in Bogor. Currently a Front-End Developer at
+        PT. Planet Selancar Mandiri who loves everything about technology, also
+        both sports and e-sports. I have a strong will to study, especially
+        learn about a new things. I am an extrovert person and tend to adapt
+        quickly in new environment
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">
