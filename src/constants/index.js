@@ -282,7 +282,8 @@ const projects = [
   },
   {
     name: "MKM",
-    description: "",
+    description:
+      "PT Mitsubishi Krama Yudha Motors and Manufacturing (PT. MKM) is one of the largest manufacturing companies producing components for Mitsubishi-branded vehicles.",
     tags: [
       {
         name: "next",
