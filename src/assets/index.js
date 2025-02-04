@@ -29,6 +29,7 @@ import prisma from "./tech/prisma.png";
 import fxmedia from "./company/fxmedia.png";
 import harisenin from "./company/harisenin.png";
 import rds from "./company/rds.png";
+import psm from "./company/psm.png";
 
 import shopee from "./shopee.png";
 import gojek from "./gojek.png";
@@ -40,14 +41,21 @@ import imaginify from "./imaginify.png";
 import codewars from "./codewars.png";
 import soulceramics from "./soulceramics.png";
 import aora from "./aora-1.png";
+import crm from "./crm.png";
+import saleshub from "./saleshub.png";
+import otb from "./otb.png";
 
 export {
   logo,
   backend,
+  psm,
   soulceramics,
   creator,
   mobile,
   codewars,
+  saleshub,
+  otb,
+  crm,
   web,
   github,
   menu,

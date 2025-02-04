@@ -33,6 +33,10 @@ import {
   codewars,
   soulceramics,
   aora,
+  psm,
+  otb,
+  saleshub,
+  crm,
 } from "../assets";
 
 export const navLinks = [
@@ -182,13 +186,25 @@ const experiences = [
     company_name: "RDS Group (Quadrant Synergy International)",
     icon: rds,
     iconBg: "#E6DEDD",
-    date: "Feb 2023 - Present",
+    date: "Feb 2023 - Aug 2024",
     points: [
       "Developed the front-end architecture and user interface using Next.js and TypeScript, leveraging its capabilities for improved performance and facilitating code reliability, maintainability, and developer productivity through static typing.",
       "Integrated React Query for efficient data fetching, caching, and synchronization with the server, ensuring a seamless user experience.",
       "Managed global state and application data using Zustand, simplifying state management and enhancing scalability and maintainability.",
       "Worked closely with design and back-end teams to develop features, troubleshoot issues, and ensure timely delivery of high- quality solutions.",
       "Conducted thorough testing and debugging to ensure cross-browser compatibility, accessibility, and responsiveness across various devices and screen sizes.",
+    ],
+  },
+  {
+    title: "Front-End Developer",
+    company_name: "PT Planet Selancar Mandiri (Planet Surf)",
+    icon: psm,
+    iconBg: "#383E56",
+    date: "Aug 2024 - Present",
+    points: [
+      "Developed a Sales Panel website using Vite, React-Query, and Mantine, enabling real-time monitoring of sales data, including breakdowns by brand, area, and store, along with sales target tracking.",
+      "Built a Marketing Platform website for managing customer membership data, creating vouchers, and handling notifications, with a focus on reusability by building custom components and hooks to ensure efficient, maintainable code.",
+      "Supported the development of an OTB (Open-To-Buy) Suite, a comprehensive platform for inventory and sales forecasting, enabling data-driven decision-making for product procurement and stock management.",
     ],
   },
 ];
@@ -282,6 +298,62 @@ const projects = [
       },
     ],
     image: mkm,
+  },
+  {
+    name: "Sales Panel",
+    description:
+      "a dynamic platform for real-time sales monitoring, providing detailed breakdowns by brand, area, and store, along with sales target tracking.",
+    tags: [
+      {
+        name: "vite",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "green-text-gradient",
+      },
+      {
+        name: "shadcn",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: saleshub,
+  },
+  {
+    name: "OTB Suite",
+    description:
+      "Comprehensive platform for inventory and sales forecasting, enabling data-driven decision-making for product procurement and stock management.",
+    tags: [
+      {
+        name: "vite",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "green-text-gradient",
+      },
+      {
+        name: "shadcn",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: otb,
+  },
+  {
+    name: "Marketing Platform",
+    description:
+      "Website for managing customer membership data, enabling voucher creation, and handling notifications to support customer engagement.",
+    tags: [
+      {
+        name: "vite",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "mantine",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: crm,
   },
   {
     name: "Imaginify",
