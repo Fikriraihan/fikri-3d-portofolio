@@ -25,7 +25,8 @@ import {
 import { SectionWrapper } from "@/hoc";
 
 async function sendToAPI(message) {
-  const res = await fetch("https://fikri-ai-production.up.railway.app/chat", {
+  const apiUrl = import.meta.env.VITE_API_URL;
+  const res = await fetch(`${apiUrl}/chat`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
