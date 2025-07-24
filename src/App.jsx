@@ -1,5 +1,17 @@
 import { BrowserRouter } from "react-router-dom";
-import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, StarsCanvas } from "./components";
+import {
+  About,
+  Contact,
+  Experience,
+  Feedbacks,
+  Hero,
+  Navbar,
+  Tech,
+  Works,
+  Chat,
+  StarsCanvas,
+} from "./components";
+import AIChatDemo from "./components/ui/chat";
 
 function App() {
   return (
@@ -9,6 +21,7 @@ function App() {
           <Navbar />
           <Hero />
         </div>
+        <Chat />
         <About />
         <Experience />
         <Tech />
