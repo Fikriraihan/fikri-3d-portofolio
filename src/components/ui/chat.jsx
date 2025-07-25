@@ -6,9 +6,6 @@ import {
   ArrowUp,
   Paperclip,
   Square,
-  Mic,
-  Search,
-  BrainCircuit,
   Code,
   BookOpen,
   PenTool,
@@ -53,11 +50,8 @@ const AIChatComponent = ({
   const [isTyping, setIsTyping] = useState(false);
   const [files, setFiles] = useState([]);
   const [shouldAutoScroll, setShouldAutoScroll] = useState(true);
-  const [searchEnabled, setSearchEnabled] = useState(false);
-  const [deepResearchEnabled, setDeepResearchEnabled] = useState(false);
-  const [reasonEnabled, setReasonEnabled] = useState(false);
+
   const [activeCommandCategory, setActiveCommandCategory] = useState(null);
-  const [isFocused, setIsFocused] = useState(false);
 
   const messagesEndRef = useRef(null);
   const textareaRef = useRef(null);
@@ -65,14 +59,14 @@ const AIChatComponent = ({
 
   const commandSuggestions = {
     career: [
+      "Tell me about yourself.",
       "What projects have you worked on so far?",
       "Where are you currently working?",
       "Can you walk me through the Sales Panel Dashboard project?",
       "Tell me about the PU & Budgeting System you built.",
       "What is the Marketing Platform you developed at Planet Surf?",
       "What projects did you work on at PT Reycom Document Solusi?",
-      "Can you explain the Supplier Management System at RDS?",
-      "What was the purpose of Cirrust Workflow and your role in it?",
+      "Can you explain the E2E & Supplier Apps at RDS?",
       "How does the Cirrust Document Management System work?",
       "What technical challenges did you face during your time at Planet Surf?",
     ],
@@ -103,36 +97,6 @@ const AIChatComponent = ({
     ],
   };
 
-  //   const simulateResponse = (userMessage) => {
-  //     setIsTyping(true);
-
-  //     let response = "Hi there! I'm your AI assistant. How can I help you today?";
-
-  //     if (
-  //       userMessage.toLowerCase().includes("hello") ||
-  //       userMessage.toLowerCase().includes("hi")
-  //     ) {
-  //       response =
-  //         "Hello! I'm your friendly AI assistant. What can I do for you?";
-  //     } else if (userMessage.toLowerCase().includes("help")) {
-  //       response =
-  //         "I'm here to help! You can ask me questions, request information, or just chat.";
-  //     } else if (userMessage.toLowerCase().includes("thank")) {
-  //       response = "You're welcome! Is there anything else you'd like to know?";
-  //     } else if (userMessage.toLowerCase().includes("who are you")) {
-  //       response =
-  //         "I'm an AI assistant designed to be helpful, harmless, and honest!";
-  //     }
-
-  //     setTimeout(() => {
-  //       setIsTyping(false);
-  //       setMessages((prev) => [
-  //         ...prev,
-  //         { text: response, isUser: false, timestamp: new Date() },
-  //       ]);
-  //     }, 1500);
-  //   };
-
   const handleSubmit = () => {
     if (input.trim() === "") return;
 
@@ -146,20 +110,12 @@ const AIChatComponent = ({
     setInput("");
 
     onSendMessage?.(userMessage);
-    // simulateResponse(userMessage);
   };
 
   const handleKeyDown = (e) => {
     if (e.key === "Enter" && !e.shiftKey) {
       e.preventDefault();
       handleSubmit();
-    }
-  };
-
-  const handleFileChange = (event) => {
-    if (event.target.files) {
-      const newFiles = Array.from(event.target.files);
-      setFiles((prev) => [...prev, ...newFiles]);
     }
   };
 
@@ -180,12 +136,6 @@ const AIChatComponent = ({
     if (textareaRef.current) {
       textareaRef.current.focus();
     }
-  };
-
-  const handleScroll = (e) => {
-    const { scrollTop, scrollHeight, clientHeight } = e.target;
-    const isAtBottom = scrollTop + clientHeight >= scrollHeight - 10;
-    setShouldAutoScroll(isAtBottom);
   };
 
   useEffect(() => {
@@ -229,7 +179,6 @@ const AIChatComponent = ({
         ref={messagesEndRef}
         className={`w-full max-w-2xl mx-auto ${className}`}
       >
-        {/* Header with animated logo */}
         <div className="text-center mb-8">
           <div className="mb-6 w-16 h-16 mx-auto relative">
             <motion.div
@@ -248,9 +197,7 @@ const AIChatComponent = ({
           </p>
         </div>
 
-        {/* Chat Container */}
         <div className="bg-card border border-border rounded-3xl shadow-[0px_35px_120px_-15px_#211e35] overflow-hidden">
-          {/* Chat Header */}
           <div className="bg-gradient-to-r from-[#050816] to-[#151030] p-4 border-b border-border flex justify-between items-center">
             <div className="flex items-center space-x-2">
               <Sparkles className="text-[#aaa6c3] h-5 w-5" />
@@ -265,7 +212,6 @@ const AIChatComponent = ({
             </button>
           </div>
 
-          {/* Messages container */}
           <div className="p-4 h-96 overflow-y-auto bg-gradient-to-b from-[#050816] to-[#151030]">
             {messages.length === 0 ? (
               <div className="flex flex-col items-center justify-center h-full text-center">
@@ -315,9 +261,7 @@ const AIChatComponent = ({
             )}
           </div>
 
-          {/* Input area */}
           <div className="border-t border-border p-4 bg-gradient-to-r from-[#050816] to-[#151030]">
-            {/* Uploaded files */}
             {files.length > 0 && (
               <div className="flex flex-wrap gap-2 mb-3">
                 {files.map((file, index) => (
@@ -340,7 +284,6 @@ const AIChatComponent = ({
               </div>
             )}
 
-            {/* Input field */}
             <div className="relative flex items-end gap-2">
               <div className="flex-1 bg-[#100d25] border border-[#aaa6c3]/20 rounded-3xl p-2">
                 <div className="flex items-center">
@@ -349,8 +292,6 @@ const AIChatComponent = ({
                     value={input}
                     onChange={(e) => setInput(e.target.value)}
                     onKeyDown={handleKeyDown}
-                    onFocus={() => setIsFocused(true)}
-                    onBlur={() => setIsFocused(false)}
                     placeholder={placeholder}
                     className="min-h-[44px] w-full resize-none border-none bg-transparent text-[#f3f3f3] placeholder:text-[#aaa6c3] shadow-none outline-none focus-visible:ring-0 focus-visible:ring-offset-0"
                     rows={1}
@@ -380,7 +321,6 @@ const AIChatComponent = ({
           </div>
         </div>
 
-        {/* Command categories */}
         <div className="mt-4 grid grid-cols-3 gap-4">
           <CommandButton
             icon={<BookOpen className="w-5 h-5" />}
@@ -414,7 +354,6 @@ const AIChatComponent = ({
           />
         </div>
 
-        {/* Command suggestions */}
         <AnimatePresence>
           {activeCommandCategory && (
             <motion.div
@@ -468,8 +407,6 @@ const AIChatComponent = ({
     </TooltipProvider>
   );
 };
-
-// bg-gradient-to-r from-[#00cea8] to-[#bf61ff]
 
 function CommandButton({ icon, label, isActive, onClick }) {
   return (
