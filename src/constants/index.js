@@ -37,6 +37,8 @@ import {
   otb,
   saleshub,
   crm,
+  course,
+  awwwards,
 } from "../assets";
 
 export const navLinks = [
@@ -380,6 +382,50 @@ const projects = [
     ],
     image: imaginify,
     source_code_link: "https://github.com/Fikriraihan/imaginify",
+  },
+  {
+    name: "Course Companion",
+    description:
+      "AI‑powered learning where users create voice-based subject companions, track progress in My Journey, and manage subscriptions with secure Clerk auth.",
+    tags: [
+      {
+        name: "typescript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "next",
+        color: "green-text-gradient",
+      },
+      {
+        name: "clerk",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: course,
+    source_code_link: "https://github.com/Fikriraihan/course-saas",
+    live: "https://course-companion.it.com",
+  },
+  {
+    name: "Awwwards Website Clone",
+    description:
+      "A sleek, award‑style landing page for Zentry’s gaming metaverse, built with Next.js, React, Tailwind, and GSAP—featuring immersive video backgrounds.",
+    tags: [
+      {
+        name: "typescript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "next",
+        color: "green-text-gradient",
+      },
+      {
+        name: "GSAP",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: awwwards,
+    source_code_link: "https://github.com/Fikriraihan/awwwards-clone",
+    live: "https://awwwards-clone-delta.vercel.app",
   },
   {
     name: "Aora",

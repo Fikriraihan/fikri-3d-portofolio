@@ -44,6 +44,8 @@ import aora from "./aora-1.png";
 import crm from "./crm.png";
 import saleshub from "./saleshub.png";
 import otb from "./otb.png";
+import course from "./course.png";
+import awwwards from "./awwwards.png";
 
 export {
   logo,
@@ -88,5 +90,7 @@ export {
   mkm,
   cirrustdms,
   cirrustwf,
+  awwwards,
+  course,
   prisma,
 };

@@ -14,6 +14,7 @@ const ProjectCard = ({
   tags,
   image,
   source_code_link,
+  live,
 }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
@@ -32,7 +33,23 @@ const ProjectCard = ({
             className="w-full h-full object-cover rounded-2xl"
           />
 
-          <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
+          <div className="absolute inset-0 flex justify-end m-3 gap-2 card-img_hover">
+            {live && (
+              <div
+                onClick={() => window.open(live, "_blank")}
+                className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  className="w-1/2 h-1/2 text-white"
+                >
+                  <path d="M14 3h7v7h-2V6.414l-6.293 6.293-1.414-1.414L17.586 5H14V3z" />
+                  <path d="M19 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h6v2H5v12h12v-6h2z" />
+                </svg>
+              </div>
+            )}
             {source_code_link && (
               <div
                 onClick={() => window.open(source_code_link, "_blank")}
