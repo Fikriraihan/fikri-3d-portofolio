@@ -21,7 +21,7 @@ function App() {
           <Navbar />
           <Hero />
         </div>
-        <Chat />
+        {/* <Chat /> */}
         <About />
         <Experience />
         <Tech />
